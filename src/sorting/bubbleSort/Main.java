@@ -43,7 +43,7 @@ public class Main {
 //Bubble Sort: We compare every two adjacent element and swaps them if they are in descending order.
 //Sorting happens from last to first.
 /*
-Time Complexity :
-best: O(n) //If the elements are in the ascending order from the first iteration then we don't have to proceed.
+Time Complexity:
+best: O(n) //If the elements are in the ascending order from the first iteration then we don't have to proceed. (make sure to write the extra condition for this optimization)
 worst: O(n^2)
 */
