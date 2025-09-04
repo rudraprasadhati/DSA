@@ -3,16 +3,16 @@ package sorting.bubbleSort;
 class Solution{
     public int[] bubbleSort(int[] a){
         int n = a.length;
-        for(int i = n-1; i>=1; i--) {
-        //outer loop indicates that how much time it should perform the function according to the number of elements present in the array
+        for(int i = 0; i<n; i++) {
+        //outer loop indicates that how much time it should perform the function according to the number of elements present in the array. each iteration calls the internal function and sorts one array to the last.
             int didSwap = 0;
-            for(int j = 0; j<n-1; j++) {
+            for(int j = 1; j<n-i; j++) {
             //inner loop helps to execute the function if the conditions are met
-            //remember that here we are iterating till the last second element as the last element doesn't have a next element so the condition "a[j+1]" will give a run time error
-                if(a[j]>a[j+1]) {
+            //remember that here we are iterating from the 2nd element with index number 1 till last as the 1st element doesn't have a previous element so the condition "a[j-1]" will give a run time error
+                if(a[j]<a[j-1]) {
                     int temp = a[j];
-                    a[j] = a[j+1];
-                    a[j+1] = temp;
+                    a[j] = a[j-1];
+                    a[j-1] = temp;
                     didSwap = 1;
                 }
             }
