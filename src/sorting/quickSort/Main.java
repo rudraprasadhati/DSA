@@ -8,7 +8,7 @@ class Solution {
         int left = low;
         int right = high;
         int mid = low + ((high-low)/2);
-        int pivot = a[mid];
+        int pivot = a[mid]; //here we are storing the pivot value through the "mid" index because if we proceed with "a[mid]", the problem occurs where we swap the elements and the value gets changed on the index of "mid" (a[mid]), so storing the value in "pivot" helps us to compare with the right value throughout the iteration
         while(left<=right) {
             while(a[left]<pivot) {
                 left++;
