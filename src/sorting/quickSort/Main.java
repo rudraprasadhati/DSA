@@ -8,11 +8,12 @@ class Solution {
         int left = low;
         int right = high;
         int mid = low + ((high-low)/2);
+        int pivot = a[mid];
         while(left<=right) {
-            while(a[left]<a[mid]) {
+            while(a[left]<pivot) {
                 left++;
             }
-            while(a[right]>a[mid]) {
+            while(a[right]>pivot) {
                 right--;
             }
             if(left<=right) {
@@ -37,7 +38,7 @@ class Solution {
 }
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {34, 92, 78, 65, 90, 100, 1};
+        int[] arr = {7, 4, 1, 5, 3};
         System.out.println("Elements before sorting: ");
         for(int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]+" ");
