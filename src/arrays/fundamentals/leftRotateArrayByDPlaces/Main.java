@@ -14,6 +14,7 @@ class Solution {
     }
     public void leftRotateArrayByDPlaces(int[] a, int d) {
         int n = a.length;
+        d = d%n; //to avoid unnecessary rotations
         reverse(a, 0, d-1); //we reverse the array from "start" to "d-1"
         reverse(a, d, n-1); //then we reverse it from "d" till "end"
         reverse(a, 0, n-1); //at last, we reverse the final array to get our required answer
