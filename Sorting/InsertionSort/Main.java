@@ -33,5 +33,5 @@ public class Main {
 //Best case: O(n)
 
 //Note:
-//Insertion sort: Insertion sort, sorts the array by comparing the current element withs its previous one, and if the order is wrong, then we swap the elements to bring them into the right order.
+//Insertion sort: Insertion sort, sorts the array by comparing the current element with its previous one, and if the order is wrong, then we swap the elements to bring them into the right order.
 //In this sorting technique, the current element is inserted into its right position by comparing to its previous elements.
