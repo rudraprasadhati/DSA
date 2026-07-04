@@ -56,9 +56,16 @@ public class Main {
 }
 
 //Time complexity: O(k) time for storing the elements in an extra array that are to be rotated, then O(n-k) time for shifting the remaining elements to the left, and finally O(k) time for restoring the elements that are to be rotated from the extra array to the original array.
-//So, the time complexity becomes: O(k)+O(n-k)+O(k) = O(k+n-k+k) = O(n+k)
+//So, the time complexity becomes:
+//O(k)+O(n-k)+O(k)
+//= O(k+n-k+k)
+//= O(n+k)
+//= O(n+n-1) (because, as k<n, in worst case, the value of k would be nums.length-1)
+//= O(n+n)
+//= O(2n)
+//= O(n)
 //Over time complexity: O(n)
 //Space complexity: O(k) (Number of elements that are to be rotated to the end of the array)
 
 //Note:
-//Critical zone: remember to optimize the number of rotations by the formula, number of rotations(k) = number of rotations(k) / length of the array(n)
+//Critical zone: remember to optimize the number of rotations by the formula, number of rotations(k) = number of rotations(k) % length of the array(n)
