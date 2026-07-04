@@ -1,6 +1,5 @@
 package Sorting.QuickSort;
 
-//half done
 class Solution {
     private int partitionFunction(int left, int right, int[] nums) {
         int pivot = nums[left];
