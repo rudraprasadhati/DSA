@@ -3,9 +3,22 @@ package Arrays.Fundamentals.LargestElement;
 import java.util.Arrays;
 
 class Solution {
+//Brute force solution
+//Time complexity: O(n logn)
+//    public int largestElement(int[] nums) {
+//        Arrays.sort(nums);
+//        return nums[nums.length-1];
+//    }
+
+//Optimal solution
     public int largestElement(int[] nums) {
-        Arrays.sort(nums);
-        return nums[nums.length-1];
+        int largest = nums[0];
+        for(int i = 0; i<nums.length; i++) {
+            if(nums[i]>largest) {
+                largest = nums[i];
+            }
+        }
+        return largest;
     }
 }
 public class Main {
@@ -19,4 +32,4 @@ public class Main {
     }
 }
 
-//Time complexity: O(n logn)
+//Time complexity: O(n)
