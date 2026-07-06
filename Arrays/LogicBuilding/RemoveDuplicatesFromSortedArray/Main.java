@@ -20,6 +20,7 @@ class Solution {
 //        return set.size();
 //    }
 
+//Optimal solution
     public int removeDuplicatesFromSortedArray(int[] nums) {
         int i = 0;
         for(int j = 0; j<nums.length; j++) {
