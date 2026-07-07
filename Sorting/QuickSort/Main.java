@@ -61,7 +61,7 @@ public class Main {
 }
 
 //Time Complexity: O(n logn)
-//It is considered better than merge-sort because it doesn't take any extra space to while merging the elements.
+//It is considered better than merge-sort because it doesn't take any extra space while merging the elements.
 
 //Note:
 //Quick sort: This sorting algorithm divides the array into two parts by choosing an element as pivot, and uses the pivot element to form a partition, where the left half contains elements smaller than or equal to the pivot, and the right half contains elements greater than the pivot.
