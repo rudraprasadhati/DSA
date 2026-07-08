@@ -60,3 +60,4 @@ public class Main {
 
 //Time complexity: O(n)
 //Space complexity: O(n)
+//The optimal solution is slightly better than the brute force solution, as it is solving our problem with a single pass.
