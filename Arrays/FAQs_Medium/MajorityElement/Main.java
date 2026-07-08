@@ -1,4 +1,4 @@
-package Arrays.FAQs_Medium;
+package Arrays.FAQs_Medium.MajorityElement;
 
 class Solution {
 //Brute force solution
