@@ -38,16 +38,17 @@ class Solution {
 //        return max;
 //    }
 
+//Optimal solution
     public int maxSubArray(int[] nums) {
         int max = Integer.MIN_VALUE;
         int sum = 0;
         for(int i = 0; i<nums.length; i++) {
             sum+=nums[i];
-            if(sum<0) {
-                sum = 0;
-            }
             if(sum>max) {
                 max = sum;
+            }
+            if(sum<0) {
+                sum = 0;
             }
         }
         return max;
@@ -67,3 +68,6 @@ public class Main {
 //Optimal solution
 //Time complexity: O(n)
 //Space complexity: O(1)
+
+//Kadane's algorithm: We iterate through the array and add every element to the 'sum' varibale and with each iteration we check that if the 'sum' variable is greater than the variable 'max', and if it true then we update our varibale 'max' as of the current 'sum' value.
+//Then we add a condition to check that, if the value of 'sum' anytime goes below zero, then we reset the value of sum to zero.
