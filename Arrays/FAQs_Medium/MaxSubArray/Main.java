@@ -53,14 +53,40 @@ class Solution {
         }
         return max;
     }
+
+//Follow-up question's solution
+//Half done (Revisit and address this problem later)
+    public void printMaxSubArray(int[] nums) {
+        int max = Integer.MIN_VALUE;
+        int sum = 0;
+        int startIndex = 0;
+        int tempIndex = 0;
+        int endIndex = 0;
+        for(int i = 0; i<nums.length; i++) {
+            sum+=nums[i];
+            if(sum>max) {
+                max = sum;
+                startIndex = tempIndex;
+                endIndex = i;
+            }
+            if(sum<=0) {
+                sum = 0;
+                tempIndex = i+1;
+            }
+        }
+        for(int i = startIndex; i<=endIndex; i++) {
+            System.out.print(nums[i]+" ");
+        }
+    }
 }
 public class Main {
     public static void main(String[] args) {
 
-        int[] arr = {2, 3, -5, 3, 10, 3, 8};
+        int[] arr = {-2, -3, -5, -3, -10, -3, -8};
         Solution s = new Solution();
         int res = s.maxSubArray(arr);
         System.out.println("The sum of the maximum sub array is: "+res);
+        s.printMaxSubArray(arr);
 
     }
 }
@@ -71,3 +97,5 @@ public class Main {
 
 //Kadane's algorithm: We iterate through the array and add every element to the 'sum' varibale and with each iteration we check that if the 'sum' variable is greater than the variable 'max', and if it true then we update our varibale 'max' as of the current 'sum' value.
 //Then we add a condition to check that, if the value of 'sum' anytime goes below zero, then we reset the value of sum to zero.
+
+//Follow-up question: Print the sub-array with the max sum.
