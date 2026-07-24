@@ -117,3 +117,4 @@ public class Main {
 
 //Note: The intuition behind the optimal solution is similar to the problem of majority-element-one, whose optimal solution uses the Boyer Moore's majority vote algorithm.
 //This question require us to handle certain extra edges cases compared to the majority-element-one question to get the answer correctly.
+//To identify the edge cases, try to dry run the following example: [2, 1, 1, 3, 1, 4, 5, 6]
