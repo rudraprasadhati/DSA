@@ -92,7 +92,7 @@ public class Main {
 //If the sum becomes greater than the target element, we keep shrinking the window by subtracting elements from the left and move the 'left' vaiable forward.
 //When the 'sum' becomes lesser than or equal to the target(k), we stop shrinking.
 //Now, if the 'sum' is equal to the target and is greater than the max-size of the sub-array, we update the max-size.
-//At last, we moce the right pointer forward and keep repeating until we cross the index-bounds.
+//At last, we move the right pointer forward and keep repeating until we cross the index-bounds.
 
 //Time complexity: O(2n) = O(n)
 //Space complexity: O(1)
