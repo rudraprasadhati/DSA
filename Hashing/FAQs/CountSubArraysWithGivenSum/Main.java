@@ -55,9 +55,10 @@ public class Main {
     }
 }
 
-//Time complexity: O(n + n logn)
+//Time complexity: O(n * logn) (logn cause of the HashMap)
 //Space complexity: O(n)
 
 //Note:
 //Pattern used: PrefixSum + HashMap
 //(Problem might be a bit tricky, try to go through the code with cool mind)
+//This is similar to the 'CountSubArraysWithGivenXorK' problem.
