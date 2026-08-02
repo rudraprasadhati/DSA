@@ -16,7 +16,7 @@ class Solution {
 //Optimal solution
     public int lowerBound(int[] nums, int target) {
         int low = 0;
-        int high = nums.length;
+        int high = nums.length-1;
         int res = nums.length;
         while(low<=high) {
             int mid = low+((high-low)/2);
