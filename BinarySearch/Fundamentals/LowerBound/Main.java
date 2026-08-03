@@ -47,6 +47,10 @@ public class Main {
 //Space complexity: O(1)
 
 //Note for the question:
+
+//Lower bound: We have to find the smallest element who is greater than or equal to the target.
+//Condition: smallest element from the array >= target
+
 //We iterate through the array, and if we encounter someone which is greater than or equal to the target, then we store its index value in the variable 'res', as it could be our possible answer, and then we just reduce our higher side bounds and update the variable 'high' to 'mid-1'.
 //If the current element is smaller than the target, we should not even consider it, we just update our 'low' to 'mid+1', and move ahead to look for someone who is greater than or equal to the target.
 //Remember, we only update our 'res' variable if and only if 'nums[mid]' is greater than or equal to the target.
