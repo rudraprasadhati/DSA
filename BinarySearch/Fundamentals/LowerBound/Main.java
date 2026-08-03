@@ -48,7 +48,7 @@ public class Main {
 
 //Note for the question:
 //We iterate through the array, and if we encounter someone which is greater than or equal to the target, then we store its index value in the variable 'res', as it could be our possible answer, and then we just reduce our higher side bounds and update the variable 'high' to 'mid-1'.
-//If it is smaller than the target, we should not even consider it, we just update our 'low' to 'mid+1', and move ahead to look for someone who is greater than or equal to the target.
-//Remember, we only update our 'res' variable if and only if 'nums[mid' is greater than or eqaul to the target.
+//If the current element is smaller than the target, we should not even consider it, we just update our 'low' to 'mid+1', and move ahead to look for someone who is greater than or equal to the target.
+//Remember, we only update our 'res' variable if and only if 'nums[mid]' is greater than or equal to the target.
 
 //Note regarding binary-search: If the array is sorted, and we have to search for something, then we use the binary-search algorithm.
