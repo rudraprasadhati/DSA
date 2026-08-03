@@ -46,4 +46,7 @@ public class Main {
 //Time complexity: O(log n)
 //Space complexity: O(1)
 
+//Upper bound: We have to find the smallest element who is strictly greater than the target.
+//Condition: smallest element from the array > target
+
 //Note: The logic is same as lower-bound question.
