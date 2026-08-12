@@ -52,4 +52,4 @@ public class Main {
 //Time complexity: O(log n)
 //Space complexity: O(1)
 
-//If anytime you have to find something like a maximum/minimum number within a range, you can always go for binary search.
+//Note regarding questions: If anytime you have to find something like a maximum/minimum number within a range, you can always go for binary search.
