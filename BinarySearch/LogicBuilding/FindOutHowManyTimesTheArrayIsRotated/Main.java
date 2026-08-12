@@ -53,3 +53,5 @@ public class Main {
 //Space complexity: O(1)
 
 //Note: Here we just have to find the index of the smallest number to get how many times the array has been rotated.
+
+//You can also try a similar question by yourself in which, there are duplicate numbers in the array.
