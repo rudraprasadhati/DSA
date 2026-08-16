@@ -1,7 +1,5 @@
 package BinarySearch.OnAnswers.FindTheSmallestDivisor;
 
-import java.util.Arrays;
-
 class Solution {
 //Brute force solution
 //Time complexity: O(n + (max*n) = O(max*n)
